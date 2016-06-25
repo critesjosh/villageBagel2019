@@ -1,20 +1,103 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Josh's Site</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>FCCportfolio</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+      <link href="style.css" rel="stylesheet">
+      <link href="startbootstrap-scrolling-nav-1.0.4/css/scrolling-nav.css" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+      <script src="startbootstrap-scrolling-nav-1.0.4/js/jquery.easing.min.js"></script>
+      <script src="https://use.fontawesome.com/5f313becf6.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+      <script src="startbootstrap-scrolling-nav-1.0.4/js/scrolling-nav.js"></script>
+      <script src="app.js"></script>
+  </head>
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="header">
+          <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                 <span class="sr-only">Toggle navigation</span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+             </button>
+             <a class="navbar-brand page-scroll" href="#page-top">Josh Crites</a>
+          </div>
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav pull-right">
 
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,700">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-      <p>Hi!</p>
-      <p>This is my website where everyone is welcome.</p>
-      <p><a href="http://dreamcatcherproject.net/josh/neighborhood-map-project">Here</a> is a link to a
-        cool interactive map of Detroit that I made. And <a href="https://critesjosh.github.io/neighborhood-map-project/">here</a> is the code</p>
-      <p><a href="http://dreamcatcherproject.net/josh/arcadeGame">Here</a> is a link to a
-        frogger clone that I made. And <a href="https://critesjosh.github.io/joshs-arcade-game-master/">here</a> is the code.</p>
-    </body>
+              <li class>
+                <a class="page-scroll" href="#about">About</a>
+              </li>
+              <li class>
+                <a class="page-scroll" href="#portfolio">Portfolio</a>
+              </li>
+              <li class>
+                <a class="page-scroll" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+        <div id="about" class="row bio img">
+          <div class="img-col-xs-10 center-block">
+            <img class="center-block bio-img img-responsive img-rounded" src="https://avatars.githubusercontent.com/u/18372439?v=3">
+          </div>
+        </div>
+        <div class="row bio">
+          <div class="bio-desc col-xs-6 col-xs-offset-3 text-center">
+            <p class="">Hi!</p>
+            <p class="">This is my portfolio, where everyone is welcome!
+            </br> This is where I show off my skills. Check it out and let me know what you think.</p>
+          </div>
+        </div>
+        <div id="portfolio" class="row project-description">
+          <h2 class="col-xs-12 text-center">Portfilio</h2>
+          <h3 class="col-xs-12 text-center">A sampling of things I've created</h3>
+        </div>
+        <div class="row project-thumbnails">
+          <div class="col-xs-6 col-md-3">
+            <a href="#" class="thumbnail">
+              <img src="https://s3.amazonaws.com/accredible_api_evidence_items/previews/156032/large/1466364705308?1466364367" alt="detroit map application">
+            </a>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <a href="http://dreamcatcherproject.net/josh/arcadeGame/" class="thumbnail">
+              <img src="https://s3.amazonaws.com/accredible_api_evidence_items/previews/144125/large/1464273499120?1464272714" alt="frogger clone game">
+            </a>
+          </div>
+          </a>
+        </div>
+        <div id="contact" class="row contact">
+          <div class="col-xs-5 col-xs-offset-1">
+            <h2>Contact Me!</h2>
+            <h4>I am available for hire.</h4>
+          </div>
+          <div class="col-xs-6">
+          <div class="input-group">
+            <input id="name" type="text" class="form-control" placeholder="Name">
+            <input id="email" type="text" class="form-control" placeholder="Email Address">
+            <input id="phone" type="text" class="form-control" placeholder="Phone number">
+            <input id="message" type="text" class="form-control message" placeholder="Message">
+          </div>
+            <button class="contact-submit btn btn-default" type="submit">Submit</button>
+          </div>
+        </div>
+        <footer class="row text-center">
+          <a href="https://www.linkedin.com/in/josh-crites-609b4726"><button type="button" class="btn btn-default navbar-btn"><i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                LinkedIn </button></a>
+          <a href="https://github.com/critesjosh"><button type="button" class="btn btn-default navbar-btn"><i class="fa fa-github" aria-hidden="true"></i>
+                GitHub</button></a>
+          <a href="https://www.facebook.com/joshua.d.crites"><button type="button" class="btn btn-default navbar-btn"><i class="fa fa-facebook" aria-hidden="true"></i>
+                Facebook</button></a>
+          <a href="https://www.freecodecamp.com/critesjosh"><button type="button" class="btn btn-default navbar-btn">Free Code Camp</button></a>
+          <a href="https://profiles.udacity.com/u/joshcrites"><button type="button" class="btn btn-default navbar-btn">Udacity</button></a>
+        </footer>
+      </div>
+  </body>
 </html>

@@ -18,6 +18,9 @@ body{
 #contact {
   padding-top: 150px;
 }
+#contact-form {
+  margin-top: 30px;
+}
 .bio {
   background-color: #00CCFF;
   padding-top: 30px;

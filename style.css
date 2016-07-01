@@ -81,4 +81,5 @@ body{
 }
 footer{
   background-color: gray;
+  font-style: inherit;
 }

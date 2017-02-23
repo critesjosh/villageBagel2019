@@ -1,6 +1,7 @@
 var React = require('react');
 
 var {
+  Row,
   Col,
   Button,
   Image,
@@ -10,14 +11,18 @@ var {
 function Projectpanel (props) {
 
   const title = (
-    <h3>Title</h3>
+    <h3>{props.title}</h3>
   )
 
   return (
     <div>
       <Panel header={title}>
-        <Image src="../assets/profile-pic.png" />
-        Panel content
+        <Row className="center">
+          <Image src="../assets/profile-pic.png" responsive/>
+        </Row>
+        <Row style={{padding: 10}}>
+          {props.description}
+        </Row>
       </Panel>
     </div>
   )

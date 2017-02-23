@@ -1,23 +1,22 @@
 var React = require('react');
-//var ReactBootstrap = require('react-bootstrap');
 
 var {
-  Jumbotron,
   Grid,
   Row,
   Col,
 } = require('react-bootstrap');
 
 
-function Component(props) {
+function Header(props) {
 
   return (
     <Row className="title">
-      <Col xs={12} md={8} mdOffset={2}>
+      <Col md={8} mdOffset={2}>
         <h1>Portfolio</h1>
+        <hr />
       </Col>
     </Row>
   )
 }
 
-module.exports = Component;
+module.exports = Header;

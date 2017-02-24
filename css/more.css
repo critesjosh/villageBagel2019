@@ -15,3 +15,12 @@
 .modal-body img {
   margin: 10px;
 }
+
+.modal-header {
+  padding: 20 10 20 10
+}
+
+hr {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}

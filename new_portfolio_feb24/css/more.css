@@ -1,0 +1,17 @@
+#portfolio {
+  margin-top: 140px;
+}
+
+.panel-body img{
+  max-width: 100%;
+  max-height: inherit;
+  display: block;
+}
+
+.project-link {
+  color: black;
+}
+
+.modal-body img {
+  margin: 10px;
+}

@@ -4,7 +4,8 @@
       <meta charset="UTF-8">
       <title>Josh's Portfolio</title>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-      <link href="style.css" rel="stylesheet">
+      <link href="css/gsdk.css" rel="stylesheet">
+      <link href="css/more.css" rel="stylesheet">
       <link href="startbootstrap-scrolling-nav-1.0.4/css/scrolling-nav.css" rel="stylesheet">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
       <script src="startbootstrap-scrolling-nav-1.0.4/js/jquery.easing.min.js"></script>
@@ -30,7 +31,7 @@
             <ul class="nav navbar-nav pull-right">
 
               <li class>
-                <a class="page-scroll" href="#about">About</a>
+                <a data-toggle="modal" data-target="#aboutModal">About</a>
               </li>
               <li class>
                 <a class="page-scroll" href="#portfolio">Portfolio</a>
@@ -44,119 +45,135 @@
       </div>
     </nav>
     <div class="container-fluid">
-        <div id="about" class="row bio img">
-          <div class="col-xs-12 center-block">
-            <img class="center-block bio-img img-responsive img-rounded" src="images/thumbsUp.jpg">
-          </div>
-        </div>
-        <div class="row bio">
-          <div class="bio-desc col-xs-12 text-center">
-            <p class="">Hi!</p>
-            <p class="">This is my portfolio, where everyone is welcome!
-            </br> This is where I show off my skills. Check it out and let me know what you think.</p>
-          </div>
-        </div>
+
         <div id="portfolio" class="row project-description">
           <h2 class="col-xs-12 text-center">Portfilio</h2>
           <h3 class="col-xs-12 text-center">A sampling of things I've created</h3>
           <h3 class="col-xs-12 text-center">Check out the source code for these projects on my <a href="https://github.com/critesjosh">Github profile.</a></h3>
         </div>
+        <hr />
 
         <div class="row project-thumbnails">
           <div class="col-md-4">
-            <div class="thumbnail">
-              <a href="https://python-hello-world-158703.appspot.com/">
+            <a class="project-link" href="https://python-hello-world-158703.appspot.com/">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2 class="panel-title">Personal Blog Demo</h2>
+              </div>
+              <div class="panel-body">
                 <img src="images/blog_shot.png" alt="blog screenshot">
-              </a>
-              <div class="caption">
-                <h3>Personal Blog Demo</h3>
-                <p>A demo blog I built using Python and Google App Engine.</p>
+                A demo blog I built using Python hosted on Google App Engine.
               </div>
             </div>
+            </a>
           </div>
+
           <div class="col-md-4">
-            <div class="thumbnail">
-              <a href="http://dreamcatcherproject.net/josh/markdown-previewer/">
+            <a class="project-link" href="http://dreamcatcherproject.net/josh/markdown-previewer/">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2 class="panel-title">Markdown Previwer</h2>
+              </div>
+              <div class="panel-body">
                 <img src="images/markdown-previewer.png" alt="markdown previewer">
-              </a>
-              <div class="caption">
-                <h3>Markdown Previewer</h3>
-                <p>A Markdown syntax previewer built with React and Sass.</p>
+                A Markdown syntax previewer built with React and Sass.
               </div>
             </div>
+            </a>
           </div>
+
           <div class="col-md-4">
-            <div class="thumbnail">
-              <a href="http://dreamcatcherproject.net/josh/benzinga/code-challenge/">
+            <a class="project-link" href="http://dreamcatcherproject.net/josh/benzinga/code-challenge/">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2 class="panel-title">Play the Stock Market</h2>
+              </div>
+              <div class="panel-body">
                 <img src="images/stockApp.png" alt="stock app screenshot">
-              </a>
-              <div class="caption">
-                <h3>Play the Stock Market</h3>
-                <p>An app to play the stock market.</p>
+                An app to play the stock market.
               </div>
             </div>
+            </a>
           </div>
+
         </div>
         <div class="row project-thumbnails">
 
           <div class="col-md-4">
-            <div class="thumbnail">
-              <a href="https://critesjosh.github.io/fcc-heat-map">
+            <a class="project-link" href="https://critesjosh.github.io/fcc-heat-map">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2 class="panel-title">Earth's Surface Temperature</h2>
+              </div>
+              <div class="panel-body">
                 <img src="images/heat-map.png" alt="heat map">
-              </a>
-              <div class="caption">
-                <h3>Earth's Surface Temperature</h3>
-                <p>A data driven document (d3.js).</p>
+                A data driven document (d3.js).
               </div>
             </div>
+            </a>
           </div>
+
           <div class="col-md-4">
-            <div class="thumbnail">
-              <a href="http://wuwjap.com/">
+            <a class="project-link" href="http://wuwjap.com">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2 class="panel-title">My Travel Blog</h2>
+              </div>
+              <div class="panel-body">
                 <img src="images/wuwjap.png" alt="blog screenshot">
-              </a>
-              <div class="caption">
-                <h3>My Travel Blog</h3>
-                <p>Created with github Pages and Jekyll.</p>
+                Created with github Pages and Jekyll.
               </div>
             </div>
+            </a>
           </div>
+
           <div class="col-md-4">
-            <div class="thumbnail">
-              <a href="https://url-shortener34.herokuapp.com/">
-                <img src="images/url-shortener.png" alt="url-shortener screenshot">
-              </a>
-              <div class="caption">
-                <h3>Url shortener</h3>
-                <p>Created with Express, MongoDB. Deployed on heroku.</p>
+            <a class="project-link" href="http://dreamcatcherproject.net/josh/camper-leaderboard/">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2 class="panel-title">Free Code Camp Leaderboard</h2>
+              </div>
+              <div class="panel-body">
+                <img src="images/leaderboard.png" alt="camper leaderboard">
+                A page that fetches data from Free Code Camp and displays the results built with React.
               </div>
             </div>
+            </a>
           </div>
+
         </div>
         <div class="row project-thumbnails">
+
           <div class="col-md-4">
-            <div class="thumbnail">
-              <a href="http://dreamcatcherproject.net/josh/camper-leaderboard/">
-                <img src="images/leaderboard.png" alt="camper leaderboard">
-              </a>
-              <div class="caption">
-                <h3>Free Code Camper Leaderboard</h3>
-                <p>A page that fetches data from Free Code Camp and displays the results built with React.</p>
+            <a class="project-link" href="https://url-shortener34.herokuapp.com/">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2 class="panel-title">Url Shortener Microservice</h2>
+              </div>
+              <div class="panel-body">
+                <img src="images/url-shortener.png" alt="url-shortener screenshot">
+                Created with Express, MongoDB. Deployed on heroku.
               </div>
             </div>
+            </a>
           </div>
+
           <div class="col-md-4">
-            <div class="thumbnail">
-              <a href="https://dreamcatcherproject.net/josh/DCPapp-PWA/">
+            <a class="project-link" href="https://dreamcatcherproject.net/josh/DCPapp-PWA/">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2 class="panel-title">The Dream Catcher Project App</h2>
+              </div>
+              <div class="panel-body">
                 <img src="http://dreamcatcherproject.net/josh/theDreamCatcherProjectSite/assembly.png" alt="dream catcher pic">
-              </a>
-              <div class="caption">
-                <h3>The Dream Catcher Project App</h3>
-                <p>A creativity tool I designed and created utilizing the power of dreams.</p>
+                A creativity tool I designed and created to harness the power of dreams.
               </div>
             </div>
+            </a>
           </div>
+
         </div>
+
         <div id="contact" class="row contact">
           <div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
             <h2>Contact Me!</h2>
@@ -170,14 +187,43 @@
                 LinkedIn </button></a>
           <a href="https://github.com/critesjosh"><button type="button" class="btn btn-default navbar-btn"><i class="fa fa-github" aria-hidden="true"></i>
                 GitHub</button></a>
-          <a href="https://www.facebook.com/joshua.d.crites"><button type="button" class="btn btn-default navbar-btn"><i class="fa fa-facebook" aria-hidden="true"></i>
-                Facebook</button></a>
           <a href="https://www.freecodecamp.com/critesjosh"><button type="button" class="btn btn-default navbar-btn">Free Code Camp</button></a>
           <a href="https://profiles.udacity.com/u/joshcrites"><button type="button" class="btn btn-default navbar-btn">Udacity</button></a>
-          <a href="https://www.codecademy.com/critesjosh"><button type="button" class="btn btn-default navbar-btn"><i class="fa fa-code" aria-hidden="true"></i> Codecademy </button></a>
-          <a href="https://www.codeschool.com/users/critesjosh"><button type="button" class="btn btn-default navbar-btn"><i class="fa fa-file-code-o" aria-hidden="true"></i> Code School </button></a>
 
         </footer>
+      </div>
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 style="display: inline" class="modal-title" id="exampleModalLabel">About Me</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <hr />
+            <div class="modal-body">
+              <img src="images/faceshot.jpg" />
+              I am a self taught web developer that just moved to Detroit.
+            </div>
+            <div class="modal-footer">
+              <a href="https://www.linkedin.com/in/josh-crites-609b4726"><button type="button" class="btn btn-default btn-simple "><i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    LinkedIn </button></a>
+              <div class="divider"></div>
+              <a href="https://github.com/critesjosh"><button type="button" class="btn btn-default btn-simple "><i class="fa fa-github" aria-hidden="true"></i>
+                    GitHub</button></a>
+              <div class="divider"></div>
+              <a href="https://www.freecodecamp.com/critesjosh"><button type="button" class="btn btn-default btn-simple ">Free Code Camp</button></a>
+              <div class="divider"></div>
+              <a href="https://profiles.udacity.com/u/joshcrites"><button type="button" class="btn btn-default btn-simple ">Udacity</button></a>
+              <hr/>
+              <button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
       </div>
   </body>
 </html>

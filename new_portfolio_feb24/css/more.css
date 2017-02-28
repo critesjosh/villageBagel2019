@@ -15,3 +15,17 @@
 .modal-body img {
   margin: 10px;
 }
+
+.skillLabel {
+  margin-right: 5px;
+  margin-left: 5px;
+  display: inline-block;
+}
+
+.checkbox input {
+  display: block;
+}
+
+.projectSkills {
+text-wrap: normal;
+}

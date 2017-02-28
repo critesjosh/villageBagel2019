@@ -1,6 +1,4 @@
-'use strict';
-
-require('projects.js');
+import 'projects.js';
 
 $('body').scrollspy({ target: '.navbar-fixed-top' });
 

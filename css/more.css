@@ -28,3 +28,8 @@
 body {
   font-size: 18px !important;
 }
+
+.modal-body-text {
+  display: inline;
+  overflow: auto;
+}

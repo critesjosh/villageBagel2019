@@ -24,3 +24,7 @@
   margin-top: 5px;
   margin-bottom: 5px;
 }
+
+body {
+  font-size: 18px !important;
+}

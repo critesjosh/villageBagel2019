@@ -2,18 +2,16 @@
 <html lang="en">
   <head>
       <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Josh's Portfolio</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
       <link rel="stylesheet" href="css/bootstrap.css">
       <link href="css/gsdk.css" rel="stylesheet">
       <link href="css/more.css" rel="stylesheet">
       <link href="startbootstrap-scrolling-nav-1.0.4/css/scrolling-nav.css" rel="stylesheet">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
       <script src="startbootstrap-scrolling-nav-1.0.4/js/jquery.easing.min.js"></script>
       <script src="https://use.fontawesome.com/5f313becf6.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
       <script src="startbootstrap-scrolling-nav-1.0.4/js/scrolling-nav.js"></script>
-      <script src="app.js"></script>
   </head>
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -47,155 +45,52 @@
     </nav>
     <div class="container-fluid">
 
-        <div id="portfolio" class="row project-description">
-          <h2 class="col-xs-12 text-center">Portfilio</h2>
-          <h3 class="col-xs-12 text-center">A sampling of things I've created</h3>
-          <h3 class="col-xs-12 text-center">Check out the source code for these projects on my <a href="https://github.com/critesjosh">Github profile.</a></h3>
-        </div>
-        <hr />
-
-        <div class="row project-thumbnails">
-          <div class="col-md-4">
-            <a class="project-link" href="https://python-hello-world-158703.appspot.com/">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 class="panel-title">Personal Blog Demo</h3>
-              </div>
-              <div class="panel-body">
-                <img src="images/blog_shot.png" alt="blog screenshot">
-                A demo blog I built using Python hosted on Google App Engine.
-              </div>
-            </div>
-            </a>
-          </div>
-
-          <div class="col-md-4">
-            <a class="project-link" href="http://dreamcatcherproject.net/josh/markdown-previewer/">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 class="panel-title">Markdown Previewer</h3>
-              </div>
-              <div class="panel-body">
-                <img src="images/markdown-previewer.png" alt="markdown previewer">
-                A Markdown syntax previewer built with React and Sass.
-              </div>
-            </div>
-            </a>
-          </div>
-
-          <div class="col-md-4">
-            <a class="project-link" href="http://dreamcatcherproject.net/josh/benzinga/code-challenge/">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 class="panel-title">Play the Stock Market</h3>
-              </div>
-              <div class="panel-body">
-                <img src="images/stockApp.png" alt="stock app screenshot">
-                An app to play the stock market.
-              </div>
-            </div>
-            </a>
-          </div>
-
-        </div>
-        <div class="row project-thumbnails">
-
-          <div class="col-md-4">
-            <a class="project-link" href="https://critesjosh.github.io/fcc-heat-map">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 class="panel-title">Earth's Surface Temperature</h3>
-              </div>
-              <div class="panel-body">
-                <img src="images/heat-map.png" alt="heat map">
-                A data driven document (d3.js).
-              </div>
-            </div>
-            </a>
-          </div>
-
-          <div class="col-md-4">
-            <a class="project-link" href="http://wuwjap.com">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 class="panel-title">My Travel Blog</h3>
-              </div>
-              <div class="panel-body">
-                <img src="images/wuwjap.png" alt="blog screenshot">
-                Created with github Pages and Jekyll.
-              </div>
-            </div>
-            </a>
-          </div>
-
-          <div class="col-md-4">
-            <a class="project-link" href="http://dreamcatcherproject.net/josh/camper-leaderboard/">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 class="panel-title">Free Code Camp Leaderboard</h3>
-              </div>
-              <div class="panel-body">
-                <img src="images/leaderboard.png" alt="camper leaderboard">
-                A page that fetches data from Free Code Camp and displays the results built with React.
-              </div>
-            </div>
-            </a>
-          </div>
-
-        </div>
-        <div class="row project-thumbnails">
-
-          <div class="col-md-4">
-            <a class="project-link" href="https://url-shortener34.herokuapp.com/">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 class="panel-title">Url Shortener Microservice</h3>
-              </div>
-              <div class="panel-body">
-                <img src="images/url-shortener.png" alt="url-shortener screenshot">
-                Created with Express, MongoDB. Deployed on heroku.
-              </div>
-            </div>
-            </a>
-          </div>
-
-          <div class="col-md-4">
-            <a class="project-link" href="https://dreamcatcherproject.net/josh/DCPapp-PWA/">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 class="panel-title">The Dream Catcher Project App</h3>
-              </div>
-              <div class="panel-body">
-                <img src="http://dreamcatcherproject.net/josh/theDreamCatcherProjectSite/assembly.png" alt="dream catcher pic">
-                A creativity tool I designed and created to harness the power of dreams.
-              </div>
-            </div>
-            </a>
-          </div>
-
-        </div>
-
-        <div id="contact" class="row contact">
-          <div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
-            <h2>Contact Me!</h2>
-            <h4>I am available for hire.</h4>
-            <p id="contact-info">Email me at <a href="mailto:critesjosh@gmail.com">critesjosh@gmail.com</a> or send a message
-              to one of my profiles below.</p>
-          </div>
-        </div>
-        <footer class="row text-center">
-          <a href="https://www.linkedin.com/in/josh-crites-609b4726"><button type="button" class="btn btn-default btn-simple "><i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                LinkedIn </button></a>
-          <div class="divider"></div>
-          <a href="https://github.com/critesjosh"><button type="button" class="btn btn-default btn-simple "><i class="fa fa-github" aria-hidden="true"></i>
-                GitHub</button></a>
-          <div class="divider"></div>
-          <a href="https://www.freecodecamp.com/critesjosh"><button type="button" class="btn btn-default btn-simple ">Free Code Camp</button></a>
-          <div class="divider"></div>
-          <a href="https://profiles.udacity.com/u/joshcrites"><button type="button" class="btn btn-default btn-simple ">Udacity</button></a>
-
-        </footer>
+      <div id="portfolio" class="row project-description">
+        <h2 class="col-xs-12 text-center">Portfilio</h2>
+        <h3 class="col-xs-12 text-center">A sampling of things I've created</h3>
+        <h3 class="col-xs-12 text-center">Check out the source code for these projects on my <a href="https://github.com/critesjosh">Github profile.</a></h3>
       </div>
+      <hr />
+      <div>
+        <div class="row">
+          <h3 class="col-xs-10 col-xs-offset-1">Filter projects by skill:</h3>
+        </div>
+        <div class="row">
+          <div class="col-xs-10 col-xs-offset-1">
+            <button class="btn btn-default" onclick="checkall()">Check All</button>
+            <button class="btn btn-default" onclick="uncheckall()">Uncheck All</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="skills form-group col-xs-10 col-xs-offset-1"></div>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="projects col-xs-10 col-xs-offset-1"></div>
+      </div>
+      <div id="contact" class="row contact">
+        <div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
+          <h2>Contact Me!</h2>
+          <h4>I am available for hire.</h4>
+          <p id="contact-info">Email me at <a href="mailto:critesjosh@gmail.com">critesjosh@gmail.com</a> or send a message
+            to one of my profiles in the about me section.</p>
+        </div>
+      </div>
+      <footer class="row text-center">
+
+        <a href="https://www.linkedin.com/in/josh-crites-609b4726"><button type="button" class="btn btn-default btn-simple "><i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              LinkedIn </button></a>
+        <div class="divider"></div>
+        <a href="https://github.com/critesjosh"><button type="button" class="btn btn-default btn-simple "><i class="fa fa-github" aria-hidden="true"></i>
+              GitHub</button></a>
+        <div class="divider"></div>
+        <a href="https://www.freecodecamp.com/critesjosh"><button type="button" class="btn btn-default btn-simple ">Free Code Camp</button></a>
+        <div class="divider"></div>
+        <a href="https://profiles.udacity.com/u/joshcrites"><button type="button" class="btn btn-default btn-simple ">Udacity</button></a>
+      </footer>
+
+    </div>
 
 
       <!-- Modal -->
@@ -203,12 +98,12 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h3 style="display: inline" class="modal-title" id="exampleModalLabel">About Me</h3>
+              <h5 style="display: inline" class="modal-title" id="exampleModalLabel">About Me</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <hr class="modal-hr"/>
+            <hr />
             <div class="modal-body row img-rounded">
               <img class="col-xs-3 img-thumbnail" src="images/faceshot.jpg" />
               <div class="col-xs-8">
@@ -231,5 +126,7 @@
           </div>
         </div>
       </div>
+      <script src="app.js"></script>
+
   </body>
 </html>

@@ -1,3 +1,7 @@
+body {
+  font-size: 16px !important;
+}
+
 #portfolio {
   margin-top: 140px;
 }
@@ -16,20 +20,16 @@
   margin: 10px;
 }
 
-.modal-header {
-  padding: 20 10 20 10
+.skillLabel {
+  margin-right: 5px;
+  margin-left: 5px;
+  display: inline-block;
 }
 
-.modal-hr {
-  margin-top: 5px;
-  margin-bottom: 5px;
+.checkbox input {
+  display: block;
 }
 
-body {
-  font-size: 18px !important;
-}
-
-.modal-body-text {
-  display: inline;
-  overflow: auto;
+.projectSkills {
+text-wrap: normal;
 }

@@ -1,5 +1,19 @@
 var projects = [
   {
+    title: 'Profession Bagel Website',
+    url: 'https://village-bagel.appspot.com',
+    image: 'images/bagel.png',
+    description: 'A site built for a bagel business, complete with an online order system and email order confirmations.',
+    tags: ['Frontend', 'NodeJS', 'Express', 'Google_App_Engine', 'Backend', 'API', 'Ecommerce']
+  },
+  {
+    title: 'Personal Blog',
+    url: 'https://python-hello-world-158703.appspot.com/',
+    image: 'images/blog.png',
+    description: 'A blog site utilizing jinja2 in Python to route through the site.',
+    tags: ['Python', 'Backend']
+  },
+  {
     title: 'Recipe Book',
     url: 'https://recipe-book32.herokuapp.com/',
     image: 'images/recipebook.png',

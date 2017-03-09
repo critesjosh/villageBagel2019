@@ -11,7 +11,7 @@ var projects = [
     url: 'https://python-hello-world-158703.appspot.com/',
     image: 'images/blog.png',
     description: 'A blog site utilizing jinja2 in Python to route through the site.',
-    tags: ['Python', 'Backend']
+    tags: ['Python', 'Backend', 'Jinja2', 'Google_App_Engine', 'NoSQL Database']
   },
   {
     title: 'Recipe Book',
@@ -104,7 +104,13 @@ var projects = [
     description: 'Submit a file to see its size.',
     tags: ['Backend', 'FCC', 'Heroku']
   },
-
+  {
+    title: 'Url Shortener',
+    url: 'https://url-shortener34.herokuapp.com/',
+    image: 'images/metadata.png',
+    description: 'Submit a url and receive a shortened url to reroute you.',
+    tags: ['Backend', 'FCC', 'Heroku', "mongoDB"]
+  },
 
 ]
 

@@ -4,14 +4,14 @@ var projects = [
     url: 'https://village-bagel.appspot.com',
     image: 'images/bagel.png',
     description: 'A site built for a bagel business, complete with an online order system and email order confirmations.',
-    tags: ['Frontend', 'NodeJS', 'Express', 'Google_App_Engine', 'Backend', 'API', 'Ecommerce']
+    tags: ['Frontend','Backend', 'NodeJS', 'Express', 'Google_App_Engine',  'API', 'Ecommerce']
   },
   {
     title: 'Personal Blog',
     url: 'https://python-hello-world-158703.appspot.com/',
     image: 'images/blog.png',
     description: 'A blog site utilizing jinja2 in Python to route through the site.',
-    tags: ['Python', 'Backend', 'Jinja2', 'Google_App_Engine', 'NoSQL Database']
+    tags: ['Python', 'Backend', 'Jinja2', 'Google_App_Engine', 'NoSQL_Database']
   },
   {
     title: 'Recipe Book',
@@ -120,9 +120,10 @@ $('body').scrollspy({ target: '.navbar-fixed-top' })
 function insert_skills() {
   projects.forEach(function(project){
     project.tags.forEach(function(tag){
+      var skill = tag.replace(/_/g, ' ')
       if (tag !== $(`#${tag}`).val()){
         $(".skills").append(`
-            <label class="skillLabel checkbox" for="${tag}"><input checked="checked" class="skill" type="checkbox" name="${tag}" value="${tag}" id="${tag}" onclick="insert_projects(${tag})">${tag}</label>
+            <label class="skillLabel checkbox" for="${tag}"><input checked="checked" class="skill" type="checkbox" name="${tag}" value="${tag}" id="${tag}" onclick="insert_projects(${tag})">${skill}</label>
         `)
       }
     })
@@ -181,7 +182,8 @@ function displayProjects(projectsToShow) {
                 <div class=projectSkills>
                   <span>Skills:</span>
                   ${project.tags.map(function(element){
-                    return ` ${element}`
+                    var skill = element.replace(/_/g, ' ')
+                    return ` ${skill}`
                   })}
                 </div>
               </div>

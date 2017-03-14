@@ -132,7 +132,7 @@ function insert_skills() {
     }
     tag_array.forEach(function(element, index) {
       var skill = element.replace(/_/g, ' ')
-      var html = `<div class="col-xs-3 skill-btn-div text-center">
+      var html = `<div class="col-md-3 skill-btn-div text-center">
                     <button type="button" id="${element}" name="${element}" value="${element}" onclick="insert_projects(${element})" class="skill pressed btn pmd-ripple-effect">${skill}</button>
                   </div>`
       var row = Math.floor(index / 4)

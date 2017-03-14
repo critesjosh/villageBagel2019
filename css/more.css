@@ -141,3 +141,6 @@ button .skill {
 footer {
   margin-bottom: 80px;
 }
+.btn {
+  min-height: 45px;
+}

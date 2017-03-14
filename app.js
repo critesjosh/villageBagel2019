@@ -1,6 +1,6 @@
 var projects = [
   {
-    title: 'Profession Bagel Website',
+    title: 'Professional Bagel Website',
     url: 'https://village-bagel.appspot.com',
     image: 'images/bagel.png',
     description: 'A site built for a bagel business, complete with an online order system and email order confirmations.',
@@ -53,7 +53,7 @@ var projects = [
     url: 'https://dreamcatcherproject.net/josh/DCPapp-PWA/',
     image: 'images/assembly.png',
     description: 'A creativity tool I designed and created utilizing the power of dreams.',
-    tags: ['PWA', 'Personal']
+    tags: ['Progressive_Web_Application', 'Personal']
   },
   {
     title: 'Meteor Strikes on Earth',
@@ -118,16 +118,26 @@ var projects = [
 $('body').scrollspy({ target: '.navbar-fixed-top' })
 
 function insert_skills() {
-  projects.forEach(function(project){
-    project.tags.forEach(function(tag){
-      var skill = tag.replace(/_/g, ' ')
-      if (tag !== $(`#${tag}`).val()){
-        $(".skills").append(`
-            <label class="skillLabel checkbox" for="${tag}"><input checked="checked" class="skill" type="checkbox" name="${tag}" value="${tag}" id="${tag}" onclick="insert_projects(${tag})">${skill}</label>
-        `)
-      }
+    var tag_array = [];
+    projects.forEach(function(project){
+      project.tags.forEach(function(tag){
+        if (tag_array.indexOf(tag) < 0){
+          tag_array.push(tag)
+        }
+      })
     })
-  })
+
+    for (var i = 0; i < tag_array.length / 4; i++) {
+      $('.skills').append(`<div id=skillrow${i} class="row"></div>`)
+    }
+    tag_array.forEach(function(element, index) {
+      var skill = element.replace(/_/g, ' ')
+      var html = `<div class="col-xs-3 skill-btn-div text-center">
+                    <button type="button" id="${element}" name="${element}" value="${element}" onclick="insert_projects(${element})" class="skill pressed btn pmd-ripple-effect">${skill}</button>
+                  </div>`
+      var row = Math.floor(index / 4)
+      $(`#skillrow${row}`).append(html)
+    })
 }
 
 function insert_projects(tag) {
@@ -138,15 +148,16 @@ function insert_projects(tag) {
     tag = tag.value
   }
   //toggle checkbox
-  if ($(`#${tag}`).attr('checked')){
-    $(`#${tag}`).removeAttr('checked')
+  if ($(`#${tag}`).hasClass('pressed')){
+    $(`#${tag}`).removeClass('pressed')
   } else {
-    $(`#${tag}`).attr('checked', true)
+    $(`#${tag}`).addClass('pressed')
   }
 
   //create the list of skills to display
   $('.skill').each(function(index, element){
-    if (element.hasAttribute('checked')) {
+    console.log(element)
+    if (element.classList.contains('pressed')) {
       skillList.push(element.value)
     }
   })
@@ -166,34 +177,46 @@ function insert_projects(tag) {
 function displayProjects(projectsToShow) {
   $('.projects').empty()
   for (var i = 0; i < projectsToShow.length / 3; i++) {
-    $('.projects').append(`<div id=row${i} class=row></div>`)
+    $('.projects').append(`<div id=row${i} class="row"></div>`)
   }
   projectsToShow.forEach(function(project, index, array){
     var projecthtml = `<div class="col-md-4">
-            <a class="project-link" href="${project.url}">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">${project.title}</h4>
+              <div class="pmd-card pmd-card-default pmd-z-depth pmd-card-custom-form" style="height: 300px; background-image: url(./${project.image}); background-size: contain; background-repeat: no-repeat; background-position: center;">
+                <a class="project-link " href="${project.url}">
+                  <div class="overlay">
+                    <div class="pmd-card info">
+                      <h1 class="">${project.title} </h1>
+                        <p>Skills: <br> ${project.tags.map(function(element){
+                              var skill = element.replace(/_/g, ' ')
+                              return ` ${skill}`
+                            })} </p>
+                    </div>
+                  </div>
+                </a>
               </div>
-              <div class="panel-body">
-                <img src="${project.image}" alt="blog screenshot">
-                ${project.description}
-                <hr />
-                <div class=projectSkills>
-                  <span>Skills:</span>
-                  ${project.tags.map(function(element){
-                    var skill = element.replace(/_/g, ' ')
-                    return ` ${skill}`
-                  })}
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>`
+            </div>`
     var row = Math.floor(index / 3)
     $(`#row${row}`).append(projecthtml)
   })
 }
+/*
+<div class="panel panel-default ">
+  <div class="panel-heading">
+    <h4 class="panel-title">${project.title}</h4>
+  </div>
+  <div class="panel-body pmd-z-depth-1">
+    <img src="${project.image}" alt="blog screenshot">
+    ${project.description}
+    <hr />
+    <div class=projectSkills>
+      <span>Skills:</span>
+      ${project.tags.map(function(element){
+        var skill = element.replace(/_/g, ' ')
+        return ` ${skill}`
+      })}
+    </div>
+  </div>
+</div>*/
 
 $(document).ready(function(){
   $('body').scrollspy({ target: '.navbar-fixed-top' })
@@ -202,10 +225,15 @@ $(document).ready(function(){
 })
 
 function checkall() {
-  location.reload()
+  $(`.uncheck`).removeClass('pressed')
+  $(`.skill`).addClass('pressed')
+  $(`.check`).addClass('pressed')
+  insert_projects()
 }
 
 function uncheckall() {
-  $(`.skill`).removeAttr('checked')
+  $(`.check`).removeClass('pressed')
+  $(`.uncheck`).addClass('pressed')
+  $(`.skill`).removeClass('pressed')
   insert_projects()
 }

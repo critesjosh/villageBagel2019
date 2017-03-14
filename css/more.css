@@ -2,8 +2,57 @@ body {
   font-size: 16px !important;
 }
 
+header {
+    background-image: -webkit-linear-gradient(#4285f4, rgba(4, 41, 34, 0.2)), url(../images/Space-Texture.jpg);
+    background-image: linear-gradient(#4285f4, rgba(4, 41, 34, 0.2)), url(../images/Space-Texture.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.hero-text-box {
+    text-align: center;
+    color: #e7e7e7;
+    padding-top: 285px;
+}
+
+#learn_more {
+  position: relative;
+  top: 3em;
+  text-align: center;
+}
+
+#title {
+  color: white;
+  opacity: 1;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #e7e7e7;
+    color: #4285f4;
+}
+.btn .btn-ghost:active,
+.btn .btn-ghost:hover {
+  border: 1px solid #4285f4;
+  color: #fff;
+}
+
 #portfolio {
-  margin-top: 140px;
+  padding-top: 100px;
+}
+
+.pmd-checkbox [type="checkbox"]:not(:checked), .pmd-checkbox [type="checkbox"]:checked {
+  left: 0px !important;
+}
+
+.pmd-checkbox {
+  margin-left: 20px;
+}
+
+.pmd-card-media{
+  background: black;
 }
 
 .panel-body img{
@@ -21,15 +70,69 @@ body {
 }
 
 .skillLabel {
-  margin-right: 5px;
-  margin-left: 5px;
   display: inline-block;
-}
-
-.checkbox input {
-  display: block;
+  font-size: 24px;
 }
 
 .projectSkills {
 text-wrap: normal;
+}
+
+.wrap {
+  text-wrap: normal;
+}
+
+.overlay:hover {
+  opacity: 0.9;
+  background: linear-gradient(135deg,rgba(8,12,19,.9),#4285f4);
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+.overlay{
+  color: white;
+  text-align: center;
+  margin: auto;
+  width: inherit;
+  height: 100%;
+
+}
+
+.pmd-card .info {
+  color: white;
+  width: 100%;
+  text-align: center;
+  display: none;
+  background-color: transparent;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 100px;
+
+}
+
+.overlay:hover .info {
+  color: white;
+  vertical-align: middle;
+  display: block;
+  opacity: 1;
+  line-height: inherit !important;
+}
+
+button .skill {
+  background-color:#ededed;
+  color: #4285f4;
+  margin-bottom: 20px;
+}
+
+.pressed {
+  background-color: #4285f4;
+  color: #ededed;
+}
+
+.skill-btn-div {
+  margin-bottom: 20px;
+}
+footer {
+  margin-bottom: 80px;
 }

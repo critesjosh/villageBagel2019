@@ -150,7 +150,9 @@ function insert_projects(tag) {
   //toggle checkbox
   if ($(`#${tag}`).hasClass('pressed')){
     $(`#${tag}`).removeClass('pressed')
+    $(`#${tag}`).addClass('not-pressed')
   } else {
+    $(`#${tag}`).removeClass('not-pressed')
     $(`#${tag}`).addClass('pressed')
   }
 
@@ -227,6 +229,7 @@ $(document).ready(function(){
 function checkall() {
   $(`.uncheck`).removeClass('pressed')
   $(`.skill`).addClass('pressed')
+  $(`.skill`).removeClass('not-pressed')
   $(`.check`).addClass('pressed')
   insert_projects()
 }
@@ -235,5 +238,7 @@ function uncheckall() {
   $(`.check`).removeClass('pressed')
   $(`.uncheck`).addClass('pressed')
   $(`.skill`).removeClass('pressed')
+  $(`.skill`).addClass('not-pressed')
+
   insert_projects()
 }

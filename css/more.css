@@ -130,6 +130,11 @@ button .skill {
   color: #ededed;
 }
 
+.not-pressed {
+  background-color:#ededed;
+  color: #4285f4;
+}
+
 .skill-btn-div {
   margin-bottom: 20px;
 }

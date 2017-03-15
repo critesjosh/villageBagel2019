@@ -187,8 +187,8 @@ function displayProjects(projectsToShow) {
                 <a class="project-link " href="${project.url}">
                   <div class="overlay">
                     <div class="pmd-card info">
-                      <h1 class="">${project.title} </h1>
-                        <p>Skills: <br> ${project.tags.map(function(element){
+                      <h2 class="">${project.title} </h2>
+                        <p id="projectskills" class="lead">Skills: <br> ${project.tags.map(function(element){
                               var skill = element.replace(/_/g, ' ')
                               return ` ${skill}`
                             })} </p>

@@ -11,6 +11,10 @@ header {
     background-attachment: fixed;
 }
 
+h1 {
+  font-size: 36px;
+}
+
 .hero-text-box {
     text-align: center;
     color: #e7e7e7;
@@ -29,6 +33,21 @@ header {
   font-size: 34px;
 }
 
+#portfolio {
+  padding-top: 100px;
+}
+
+#projectskills {
+  font-size: 16px;
+}
+
+.modal-body img {
+  margin: 10px;
+}
+
+
+/* --------- skill buttons -------- */
+
 .btn:hover,
 .btn:active {
     background-color: #e7e7e7;
@@ -40,39 +59,38 @@ header {
   color: #fff;
 }
 
-#portfolio {
-  padding-top: 100px;
-}
-
-.pmd-checkbox [type="checkbox"]:not(:checked), .pmd-checkbox [type="checkbox"]:checked {
-  left: 0px !important;
-}
-
-.pmd-checkbox {
-  margin-left: 20px;
-}
-
-.pmd-card-media{
-  background: black;
-}
-
-.panel-body img{
-  max-width: 100%;
-  max-height: inherit;
-  display: block;
-}
-
-.project-link {
-  color: black;
-}
-
-.modal-body img {
-  margin: 10px;
+.btn{
+  margin: 5px 10px;
 }
 
 .skillLabel {
   display: inline-block;
   font-size: 24px;
+}
+
+button .skill {
+  background-color:#ededed;
+  color: #4285f4;
+  margin-bottom: 20px;
+}
+
+.pressed {
+  background-color: #4285f4;
+  color: #ededed;
+}
+
+.not-pressed {
+  background-color:#ededed;
+  color: #4285f4;
+}
+
+/* --------- project cards -------- */
+
+#card {
+  height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .overlay{
@@ -94,8 +112,6 @@ header {
   text-align: center;
   display: none;
   background-color: transparent;
-  margin-top: auto;
-  margin-bottom: auto;
   padding-top: 20px;
 }
 
@@ -103,37 +119,9 @@ header {
   color: white;
   vertical-align: middle;
   display: block;
-  opacity: 1;
   line-height: inherit !important;
-}
-
-button .skill {
-  background-color:#ededed;
-  color: #4285f4;
-  margin-bottom: 20px;
-}
-
-.pressed {
-  background-color: #4285f4;
-  color: #ededed;
-}
-
-.not-pressed {
-  background-color:#ededed;
-  color: #4285f4;
 }
 
 footer {
   margin-bottom: 80px;
-}
-
-.btn{
-  margin: 5px 10px;
-}
-
-#card {
-  height: 200px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 }

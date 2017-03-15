@@ -93,6 +93,12 @@ button .skill {
   background-position: center;
 }
 
+@media only screen and (max-device-width: 750px) {
+  #card {
+    height:350px;
+  }
+}
+
 .overlay{
   width: inherit;
   height: 100%;

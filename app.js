@@ -183,7 +183,7 @@ function displayProjects(projectsToShow) {
   //for each project, create the html for the card
   projectsToShow.forEach(function(project, index, array){
     var projecthtml =
-              `<div id="card" class="pmd-card pmd-card-default pmd-z-depth pmd-card-custom-form col-xs-6 col-sm-4 col-md-3 " style="background-image: url(./${project.image});">
+              `<div id="card" class="pmd-card pmd-card-default pmd-z-depth pmd-card-custom-form col-sm-6 col-md-4 " style="background-image: url(./${project.image});">
                 <a class="project-link " href="${project.url}">
                   <div class="overlay">
                     <div class="pmd-card info">

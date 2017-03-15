@@ -26,6 +26,7 @@ header {
 #title {
   color: white;
   opacity: 1;
+  font-size: 34px;
 }
 
 .btn:hover,
@@ -74,12 +75,9 @@ header {
   font-size: 24px;
 }
 
-.projectSkills {
-text-wrap: normal;
-}
-
-.wrap {
-  text-wrap: normal;
+.overlay{
+  width: inherit;
+  height: 100%;
 }
 
 .overlay:hover {
@@ -90,15 +88,6 @@ text-wrap: normal;
   animation: fadeIn 1s;
 }
 
-.overlay{
-  color: white;
-  text-align: center;
-  margin: auto;
-  width: inherit;
-  height: 100%;
-
-}
-
 .pmd-card .info {
   color: white;
   width: 100%;
@@ -107,8 +96,7 @@ text-wrap: normal;
   background-color: transparent;
   margin-top: auto;
   margin-bottom: auto;
-  padding-top: 100px;
-
+  padding-top: 20px;
 }
 
 .overlay:hover .info {
@@ -135,12 +123,17 @@ button .skill {
   color: #4285f4;
 }
 
-.skill-btn-div {
-  margin-bottom: 20px;
-}
 footer {
   margin-bottom: 80px;
 }
-.btn {
-  min-height: 45px;
+
+.btn{
+  margin: 5px 10px;
+}
+
+#card {
+  height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }

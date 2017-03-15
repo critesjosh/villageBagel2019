@@ -127,16 +127,16 @@ function insert_skills() {
       })
     })
 
-    for (var i = 0; i < tag_array.length / 4; i++) {
-      $('.skills').append(`<div id=skillrow${i} class="row"></div>`)
-    }
+
+    $('.skills').append(`<p id=skillrow></p>`)
+
     tag_array.forEach(function(element, index) {
       var skill = element.replace(/_/g, ' ')
-      var html = `<div class="col-md-3 skill-btn-div text-center">
-                    <button type="button" id="${element}" name="${element}" value="${element}" onclick="insert_projects(${element})" class="skill pressed btn pmd-ripple-effect">${skill}</button>
-                  </div>`
+      var html = `
+                  <button type="button" id="${element}" name="${element}" value="${element}" onclick="insert_projects(${element})" class="skill pressed btn pmd-ripple-effect">${skill}</button>
+                  `
       var row = Math.floor(index / 4)
-      $(`#skillrow${row}`).append(html)
+      $(`#skillrow`).append(html)
     })
 }
 
@@ -173,17 +173,17 @@ function insert_projects(tag) {
     })
   })
 
+  //call the display function with the appropriate projects to show
   displayProjects(projectsToShow)
 }
 
 function displayProjects(projectsToShow) {
+  //clear display before adding new projects
   $('.projects').empty()
-  for (var i = 0; i < projectsToShow.length / 3; i++) {
-    $('.projects').append(`<div id=row${i} class="row"></div>`)
-  }
+  //for each project, create the html for the card
   projectsToShow.forEach(function(project, index, array){
-    var projecthtml = `<div class="col-md-4">
-              <div class="pmd-card pmd-card-default pmd-z-depth pmd-card-custom-form" style="height: 300px; background-image: url(./${project.image}); background-size: contain; background-repeat: no-repeat; background-position: center;">
+    var projecthtml =
+              `<div id="card" class="pmd-card pmd-card-default pmd-z-depth pmd-card-custom-form col-xs-6 col-sm-4 col-md-3 " style="background-image: url(./${project.image});">
                 <a class="project-link " href="${project.url}">
                   <div class="overlay">
                     <div class="pmd-card info">
@@ -195,30 +195,11 @@ function displayProjects(projectsToShow) {
                     </div>
                   </div>
                 </a>
-              </div>
-            </div>`
-    var row = Math.floor(index / 3)
-    $(`#row${row}`).append(projecthtml)
+              </div>`
+    //add the html
+    $(`.projects`).append(projecthtml)
   })
 }
-/*
-<div class="panel panel-default ">
-  <div class="panel-heading">
-    <h4 class="panel-title">${project.title}</h4>
-  </div>
-  <div class="panel-body pmd-z-depth-1">
-    <img src="${project.image}" alt="blog screenshot">
-    ${project.description}
-    <hr />
-    <div class=projectSkills>
-      <span>Skills:</span>
-      ${project.tags.map(function(element){
-        var skill = element.replace(/_/g, ' ')
-        return ` ${skill}`
-      })}
-    </div>
-  </div>
-</div>*/
 
 $(document).ready(function(){
   $('body').scrollspy({ target: '.navbar-fixed-top' })
@@ -239,6 +220,5 @@ function uncheckall() {
   $(`.uncheck`).addClass('pressed')
   $(`.skill`).removeClass('pressed')
   $(`.skill`).addClass('not-pressed')
-
   insert_projects()
 }

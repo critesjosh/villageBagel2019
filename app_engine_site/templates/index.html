@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Josh's Portfolio</title>
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+      <link href="../public/css/propeller.css" rel="stylesheet">
+      <link href="../public/css/more.css" rel="stylesheet">
+      <link href="../public/css/animate.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="../public/startbootstrap-scrolling-nav-1.0.4/css/scrolling-nav.css" rel="stylesheet">
+  </head>
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <header>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="header">
+            <div class="navbar-header page-scroll">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                   <span class="sr-only">Toggle navigation</span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand page-scroll" data-toggle="modal" data-target="#aboutModal">Josh Crites</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+              <ul class="nav navbar-nav pull-right">
+
+                <li class>
+                  <a data-toggle="modal" data-target="#aboutModal">About</a>
+                </li>
+                <li class>
+                  <a class="page-scroll" href="#portfolio">Portfolio</a>
+                </li>
+                <li class>
+                  <a class="page-scroll" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="hero-text-box ">
+          <p id="title">Full Stack Development / Deployment <br />Progressive Web Applications</p>
+      </div>
+      <div id="learn_more">
+        <a  class="btn btn-ghost page-scroll" href="#portfolio">Learn More</a>
+      </div>
+    </header>
+
+    <div class="container-fluid">
+      <div id="portfolio" class="row project-description">
+        <h1 class="col-xs-12 text-center">Portfolio</h1>
+        <h2 class="col-xs-12 text-center lead">A sampling of things I've created.</h2>
+        <p class="col-xs-12 text-center lead">Check out the source code for these projects on my <a href="https://github.com/critesjosh">Github profile.</a></p>
+      </div>
+      <div>
+        <div class="row">
+          <h3 class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">Filter projects by skill:</h3>
+        </div>
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+            <button class="select btn pmd-ripple-effect pmd-z-depth-1">select All</button>
+            <button class="unselect btn pmd-ripple-effect pmd-z-depth-1">Unselect All</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="pmd-default-theme skills form-group col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+            <!-- skill list and buttons inserted here -->
+            <p id=skillrow></p>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="row projects">
+        <!-- projects inserted in here -->
+      </div>
+      <div id="contact" class="row contact">
+        <div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
+          <h2 class="pmd-display2">Contact Me</h2>
+          <p class="lead">I am available for hire.</p>
+          <p class="lead" id="contact-info">Email me at <a href="mailto:critesjosh@gmail.com">critesjosh@gmail.com</a> or send a message
+            to one of my profiles in the about me section.</p>
+        </div>
+      </div>
+      <footer class="row text-center">
+        <div class="col-xs-12">
+          <a href="https://www.linkedin.com/in/josh-crites-609b4726"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin-square" aria-hidden="true"></i>LinkedIn </button></a>
+          <a href="https://github.com/critesjosh"><button type="button" class="btn btn-primary"><i class="fa fa-github" aria-hidden="true"></i>GitHub</button></a>
+          <a href="https://www.freecodecamp.com/critesjosh"><button type="button" class="btn btn-primary">Free Code Camp</button></a>
+          <a href="https://profiles.udacity.com/u/joshcrites"><button type="button" class="btn btn-primary">Udacity</button></a>
+        </div>
+      </footer>
+    </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 style="display: inline" class="modal-title lead" id="exampleModalLabel">About Me</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <hr />
+            <div class="modal-body row img-rounded">
+              <img class="col-xs-3 img-thumbnail" src="public/images/faceshot.jpg" />
+              <div class="col-xs-8 lead">
+                I am a self taught web developer that just moved to Detroit.
+              </div>
+            </div>
+            <div class="modal-footer">
+              <div class="col-xs-12">
+                <a href="https://www.linkedin.com/in/josh-crites-609b4726"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin-square" aria-hidden="true"></i>LinkedIn </button></a>
+                <a href="https://github.com/critesjosh"><button type="button" class="btn btn-primary"><i class="fa fa-github" aria-hidden="true"></i>GitHub</button></a>
+                <a href="https://www.freecodecamp.com/critesjosh"><button type="button" class="btn btn-primary">Free Code Camp</button></a>
+                <a href="https://profiles.udacity.com/u/joshcrites"><button type="button" class="btn btn-primary">Udacity</button></a>
+              </div>
+              <button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="../public/startbootstrap-scrolling-nav-1.0.4/js/jquery.easing.min.js"></script>
+  <script src="../public/startbootstrap-scrolling-nav-1.0.4/js/scrolling-nav.js"></script>
+  <script src="https://use.fontawesome.com/5f313becf6.js"></script>
+  <script type="../public/text/javascript" src="js/propeller.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <script src="../public/js/script.js"></script>
+</html>

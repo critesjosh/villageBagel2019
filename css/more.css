@@ -84,6 +84,11 @@ button .skill {
   color: #4285f4;
 }
 
+.not-pressed:hover {
+  background-color: #4285f4;
+  color: #ededed;
+}
+
 /* --------- project cards -------- */
 
 #card {

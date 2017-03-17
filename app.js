@@ -130,6 +130,8 @@
     bindEvents: function () {
       this.$select.on('click', this.selectAll.bind(this))
       this.$unselect.on('click', this.unselectAll.bind(this))
+      this.$skill.on('click', this.toggleButtonStyle.bind(this))
+      this.$skill.on('click', this.render.bind(this))
     },
     createskillsList: function() {
       var skillList = []
@@ -192,12 +194,8 @@
       this.skillList.forEach(function(element, index) {
         var skill = element.replace(/_/g, ' ')
         var html = `<button type="button" id="${element}" name="${element}" value="${element}" class="skill pressed btn pmd-ripple-effect">${skill}</button>`
-        //var row = Math.floor(index / 4)
         $(`#skillrow`).append(html)
-        //add event listener for the button
-        $(`#${element}`).on('click', this.toggleButtonStyle.bind(this))
-        $(`#${element}`).on('click', this.render.bind(this))
-      }.bind(this))
+      })
     },
     renderProjects: function () {
       this.$projects.empty()

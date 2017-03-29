@@ -3,7 +3,7 @@
     projects: [
       {
         title: 'Professional Bagel Website',
-        url: 'https://village-bagel.appspot.com',
+        url: 'https://villagebagel.co',
         image: '/images/bagel.png',
         description: 'A site built for a bagel business, complete with an online order system and email order confirmations.',
         tags: ['Frontend','Backend', 'NodeJS', 'Express', 'Google_App_Engine',  'API', 'Ecommerce']
@@ -177,6 +177,7 @@
       this.projectsToShow = projectsToShow
     },
     selectAll: function() {
+      //select all projects
       this.$select.addClass('pressed')
       this.$unselect.removeClass('pressed')
       this.$skill.addClass('pressed')
@@ -184,6 +185,7 @@
       this.render()
     },
     unselectAll: function() {
+      //unselect all projects
       this.$select.removeClass('pressed')
       this.$unselect.addClass('pressed')
       this.$skill.removeClass('pressed')

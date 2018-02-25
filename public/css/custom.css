@@ -1,0 +1,169 @@
+ul{
+  list-style-type: none;
+}
+
+.cart {
+  margin-top: 80px;
+  border: 2px solid grey;
+  border-radius: 5px;
+}
+
+.cart-item {
+  font-size: 16px;
+}
+
+.cart-title {
+  margin-top: 10px;
+}
+
+a{
+  color: #1E90FF;
+  text-decoration: none;
+}
+
+#payment-form #submit {
+  flex: 1 50%;
+}
+
+.social-icon {
+  height: 40px;
+  width:40px;
+  margin: 10px;
+}
+
+.nav-dot{
+  color: #666;
+}
+.nav-label {
+  color: #ccc;
+}
+
+.page {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.order-form {
+  flex: 1 1 50%;
+  position: relative;
+  left: 2em;
+  order: 1;
+}
+
+.cart-payment {
+  flex: 1 1 50%;
+  padding-right: 10px;
+  padding-left: 10px;
+  order:2;
+}
+
+.cart {
+  border: 2px black solid;
+}
+
+#cart-title {
+  position: relative;
+  left: 0.5em;
+  width: 100%;
+}
+
+.cart-item{
+  position: relative;
+  left: 2em;
+}
+.cart-item span{
+  position: relative;
+  right: 4em;
+}
+
+.subtotal {
+  position: relative;
+  left: 0.5em;
+}
+
+@media screen and (max-width: 800px){
+  .page {
+    flex-direction: column;
+  }
+  .cart-payment, .order-form {
+    order: 0;
+  }
+}
+
+#logo {
+  -webkit-filter: invert(1);
+  filter: brightness(0) invert(1);
+  height:80%;
+  margin-top: 20px;
+}
+#tagline {
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+  vertical-align: bottom;
+  width: 30%;
+}
+
+#main-page-link {
+  position: absolute;
+  left: 1em;
+  top: 1em;
+  margin-left: 15px;
+}
+
+@media screen and (max-width: 650px){
+  #logo{
+    height:auto;
+    width:80%;
+    margin-top: 20px;
+  }
+  #main-page-link {
+    position: static;
+    left: 1em;
+    top: 1em;
+    margin-left: 15px;
+  }
+}
+
+#order-title {
+  text-align: center;
+}
+
+.form-group{
+  position: relative;
+  left: 1em;
+  margin-bottom: 10px;
+}
+#bagel-type, #bagel-number, #shmear-type, #shmear-number, #shmear-size, #spread-type, #spread-size, #spread-number {
+  position: absolute;
+  left: 8em;
+}
+#delivery_question{
+  font-size: 18px;
+}
+#delivery_input {
+  position: absolute;
+  right: 2.5em;
+}
+
+.order-button {
+  position: absolute;
+  right: 4em;
+}
+
+#reload-error {
+  color: red;
+}
+#about-us {
+  font-size: 20px;
+}
+#footer-contact {
+  font-size: 14px;
+  margin: 60px auto;
+}
+
+.bottom {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+

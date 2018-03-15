@@ -314,7 +314,6 @@ p {
     text-align: center; }
   .slide#slide01 {
     background: url(../images/villagebagel-9-X3.jpg) no-repeat center center;
-    background-size: cover;
     color: #212121; }
   .slide#slide02 {
     background: url(../images/Optimized-pro327_2.jpg) no-repeat center center;
@@ -572,3 +571,7 @@ p {
     widows: 3; }
   h2, h3 {
     page-break-after: avoid; } }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9ea1c91b6f3fd17a85e2bfb386e86a6df3fc4863

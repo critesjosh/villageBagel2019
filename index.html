@@ -1,137 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--if lt IE 7html.no-js.lt-ie9.lt-ie8.lt-ie7(lang='')
+-->
+<!--if IE 7html.no-js.lt-ie9.lt-ie8(lang='')
+-->
+<!--if IE 8html.no-js.lt-ie9(lang='')
+-->
+<!-- [if gt IE 8] <!-->
+<html lang="" class="no-js">
+  <!-- <![endif]-->
   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Josh's Portfolio</title>
-      <link href="css/bootstrap.css" rel="stylesheet">
-      <link href="css/propeller.css" rel="stylesheet">
-      <link href="css/more.css" rel="stylesheet">
-      <link href="css/animate.css" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link href="startbootstrap-scrolling-nav-1.0.4/css/scrolling-nav.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Village Bagel</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./public/css/styles.css">
+    <link rel="stylesheet" href="./public/css/custom.css">
+    <script src="./public/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <link rel="icon" type="image/png" href="./public/img/logo.png">
   </head>
-  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
-    <header>
-      <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-          <div class="header">
-            <div class="navbar-header page-scroll">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                   <span class="sr-only">Toggle navigation</span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-               </button>
-               <a class="navbar-brand page-scroll" data-toggle="modal" data-target="#aboutModal">Josh Crites</a>
-            </div>
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-              <ul class="nav navbar-nav pull-right">
-
-                <li class>
-                  <a data-toggle="modal" data-target="#aboutModal">About</a>
-                </li>
-                <li class>
-                  <a class="page-scroll" href="#portfolio">Portfolio</a>
-                </li>
-                <li class>
-                  <a class="page-scroll" href="#contact">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-      <div class="hero-text-box ">
-          <p id="title">Full Stack Development / Deployment <br />Progressive Web Applications</p>
-      </div>
-      <div id="learn_more">
-        <a  class="btn btn-ghost page-scroll" href="#portfolio">Learn More</a>
-      </div>
-    </header>
-
-    <div class="container-fluid">
-      <div id="portfolio" class="row project-description">
-        <h1 class="col-xs-12 text-center">Portfolio</h1>
-        <h2 class="col-xs-12 text-center lead">A sampling of things I've created.</h2>
-        <p class="col-xs-12 text-center lead">Check out the source code for these projects on my <a href="https://github.com/critesjosh">Github profile.</a></p>
-      </div>
-      <div>
-        <div class="row">
-          <h3 class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">Filter projects by skill:</h3>
-        </div>
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-            <button class="select btn pmd-ripple-effect pmd-z-depth-1">select All</button>
-            <button class="unselect btn pmd-ripple-effect pmd-z-depth-1" >Unselect All</button>
-          </div>
-        </div>
-        <div class="row">
-          <div class="pmd-default-theme skills form-group col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-            <!-- skill list and buttons inserted here -->
-            <p id=skillrow></p>
-
-          </div>
-        </div>
-      </div>
-      <hr />
-      <div class="row projects">
-        <!-- projects inserted in here -->
-      </div>
-      <div id="contact" class="row contact">
-        <div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
-          <h2 class="pmd-display2">Contact Me</h2>
-          <p class="lead">I am available for hire.</p>
-          <p class="lead" id="contact-info">Email me at <a href="mailto:critesjosh@gmail.com">critesjosh@gmail.com</a></p>
-        </div>
-      </div>
-      <footer class="row text-center">
-        <div class="col-xs-12">
-          <a href="https://www.linkedin.com/in/josh-crites-609b4726"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin-square" aria-hidden="true"></i>LinkedIn </button></a>
-          <a href="https://github.com/critesjosh"><button type="button" class="btn btn-primary"><i class="fa fa-github" aria-hidden="true"></i>GitHub</button></a>
-          <a href="https://www.freecodecamp.com/critesjosh"><button type="button" class="btn btn-primary">Free Code Camp</button></a>
-          <a href="https://profiles.udacity.com/u/joshcrites"><button type="button" class="btn btn-primary">Udacity</button></a>
-        </div>
-      </footer>
+  <body>
+    <!--if lt IE 8
+    p.browserupgrade
+      | You are using an
+      strong outdated
+      |  browser. Please
+      a(href='http://browsehappy.com/') upgrade your browser
+      |  to improve your experience.
+    -->
+    <div id="intro" class="header-container fs"><img id="logo" src="./public/img/logo.png"><br><img id="tagline" src="./public/images/shmearing.png">
+      <header class="wrapper"></header>
     </div>
-
-      <!-- Modal -->
-      <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 style="display: inline" class="modal-title lead" id="exampleModalLabel">About Me</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+    <nav>
+      <ul>
+        <li><a href="#intro"><span class="nav-dot"></span><span class="nav-label">Contact Us</span></a></li>
+        <!--<li><a href="#slide01"><span class="nav-dot"></span><span class="nav-label">Menu</span></a></li>-->
+        <li><a href="#slide02"><span class="nav-dot"></span><span class="nav-label">Press</span></a></li>
+        <li><a href="#slide03"><span class="nav-dot"></span><span class="nav-label">About Us</span></a></li>
+      </ul>
+    </nav>
+    <div class="main-container">
+      <article id="cb01" class="content-block">
+        <div class="wrapper">
+          <header class="slideInUp">
+            <h1>Contact Us</h1>
+          </header>
+          <section></section>
+          <section>
+            <p class="slideInUp slideInUp2"><a href="mailto:villagebagel1@gmail.com">Email Order</a></p>
+            <p class="slideInUp slideInUp2">Call In Order to:<a href="tel:19708552940"> (970) 855-2940</a></p>
+            <div class="slideInUp slideInUp3">
+              <p>Busy day but still want a fresh wholesome meal on the fly? Call in an pick up at our easy-in, easy-out new location.<br><br>34500 Highway 6<br>#B7<br>Edwards, CO 81632<br><br>We deliver! East Vail to Edwards. $25 minimum order. $6 Delivery Fee.</p>
             </div>
-            <hr />
-            <div class="modal-body row img-rounded">
-              <img class="col-xs-3 img-thumbnail" src="images/faceshot.jpg" />
-              <div class="col-xs-8 lead">
-                I am a self taught web developer that just moved to Detroit.
-              </div>
-            </div>
-            <div class="modal-footer">
-              <div class="col-xs-12">
-                <a href="https://www.linkedin.com/in/josh-crites-609b4726"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin-square" aria-hidden="true"></i>LinkedIn </button></a>
-                <a href="https://github.com/critesjosh"><button type="button" class="btn btn-primary"><i class="fa fa-github" aria-hidden="true"></i>GitHub</button></a>
-                <a href="https://www.freecodecamp.com/critesjosh"><button type="button" class="btn btn-primary">Free Code Camp</button></a>
-                <a href="https://profiles.udacity.com/u/joshcrites"><button type="button" class="btn btn-primary">Udacity</button></a>
-              </div>
-              <button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Close</button>
-            </div>
-          </div>
+          </section>
+          <section class="slideInUp slideInUp3">
+            <!--a(target='_blank', title='follow me on twitter', href='http://www.twitter.com/PLACEHOLDER')-->
+            <!--  img(class="social-icon" alt='follow me on twitter', src='../img/twitter-icon.png', border='0')--><a target="_blank" title="follow me on facebook" href="https://www.facebook.com/villagebagel/"><img alt="follow me on facebook" src="./public/img/facebook-icon.png" border="0" class="social-icon"></a><a target="_blank" title="follow me on instagram" href="http://www.instagram.com/villagebagel"><img alt="follow me on twitter" src="./public/img/instagram-icon.png" border="0" class="social-icon"></a><a target="_blank" href="mailto:name@email.com?subject=Check%20out%20this%20cool%20spot.&amp;body=Check%20out%20villagebagel.co"><img alt="follow me on twitter" src="./public/img/email-icon.png" border="0" class="social-icon"></a>
+          </section>
         </div>
+        <!-- .wrapper-->
+      </article>
+      <article id="slide01" class="slide fs">
+        <div class="wrapper">
+          <header class="slideInUp">
+            <h1></h1>
+          </header>
+          <section>
+            <p class="slideInUp slideInUp2"></p>
+          </section>
+        </div>
+        <!-- .wrapper-->
+      </article>
+      <!--<article id="cb02" class="content-block">
+        <div class="wrapper">
+          <header class="slideInUp">
+            <h1>Menu</h1>
+          </header>
+          <section>
+            <p class="slideInUp slideInUp2"></p>
+            <p class="slideInUp slideInUp2"><strong style='font-size: 24px;'>​​​​Hand-Rolled Bagels:</strong> <br> <span style='font-size:16px;'>$2.50 | $12.00 half dozen | $23.00 baker’s dozen <br> Plain | Salt | Poppy | Sesame | Onion | Everything | Garlic | Cinnamon Raisin</span></p>
+            <p class="slideInUp slideInUp3"><strong style='font-size: 24px;'>Shmears:</strong> <br>  <span style='font-size:16px;'>$5.00 half pound | $9.00 pound <br> Whipped Plain | Hatch Green Chili | Honey Rosemary | Bacon | Veggie | Chive &amp; Onion | Nutella Swirl | Maple Walnut</span></p>
+            <p class="slideInUp slideInUp3"><strong style='font-size: 24px;'>Spreads:</strong> <br> <span style='font-size:16px;'> $2.00 Single Serving | $6.00 Half Pound <br> Avocado | Almond Butter | Strawberry Preserves | Hummus </span></p>
+          </section>
+        </div>
+        <!-- .wrapper
+      </article>
+      <article id="slide02" class="slide fs">
+        <div class="wrapper">
+          <header class="slideInUp">
+            <h1></h1>
+          </header>
+          <section>
+            <p class="slideInUp slideInUp2"></p>
+            <p class="slideInUp slideInUp3"></p>
+          </section>
+        </div>
+        <!-- .wrapper
+      </article> --->
+      <article id="cb03" class="content-block">
+        <div class="wrapper">
+          <header class="slideInUp">
+            <h1 class="press">Village Bagel in the Press</h1>
+            <h2><a href="https://www.vailmag.com/articles/2017/2/10/meet-the-bagel-lady-of-vail-village#.WMHGavUkV00.email">Vail Beaver Creek Magazine</a></h2>
+            <h2><a href="http://kimfullerink.com/the-dish-on-breakfast/">Vail Daily</a></h2>
+            <h2><a href="http://www.5280.com/digital/2017/01/carb-cravings-village-bagel">5280 Magazine</a></h2>
+          </header>
+          <section>
+            <p class="slideInUp slideInUp2"></p>
+          </section>
+        </div>
+        <!-- .wrapper-->
+      </article>
+      <article id="slide03" class="slide fs">
+        <div class="wrapper">
+          <header class="slideInUp">
+            <h1></h1>
+          </header>
+          <section>
+            <p class="slideInUp slideInUp2"></p>
+            <p class="slideInUp slideInUp2"></p>
+            <div class="slideInUp slideInUp3">
+              <h2></h2>
+              <p></p>
+            </div>
+          </section>
+        </div>
+        <!-- .wrapper-->
+      </article>
+    </div>
+    <!-- #main-container-->
+    <div class="footer-container">
+      <footer></footer>
+      <div class="wrapper"><br>
+        <h1>About Us</h1>
+        <p id="about-us">We are East Coast transplants living in the mountains whose happiest memories come from the food traditions of our childhoods in the Northeast, particularly the local bakery and its warm, Saturday-morning-bagels. We are passionate about food made the old fashioned way, and the places where people gather with a shared happiness to eat the foods of their youth. We hope are your neighborhood bagel shop, <strong><em>shmearing happiness</em></strong> one hand-rolled bagel at a time. Follow us on Facebook to see where you can find Village Bagel <strong><em>pop up</em></strong> next!</p>
+        <p id="footer-contact">For wholesale and/or catering opportunities call Connie: <a tel="19148868851">914.886.8851</a></p>
+        <hr>
+        <h1 class="bottom"> <a href="mailto:villagebagel1@gmail.com" style="text-decoration:none;">Order Here</a></h1>
       </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/public/js/vendor/jquery-1.11.2.min.js"><\\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+<!--    <script type="text/javascript" src="https://js.squareup.com/v2/paymentform"></script>
+--> <script src="./public/js/main.js"></script>
+    <script src="./public/js/custom.js"></script>
   </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  <script src="startbootstrap-scrolling-nav-1.0.4/js/jquery.easing.min.js"></script>
-  <script src="startbootstrap-scrolling-nav-1.0.4/js/scrolling-nav.js"></script>
-  <script src="https://use.fontawesome.com/5f313becf6.js"></script>
-  <script src="./js/bootstrap.js"></script>
-  <script type="text/javascript" src="js/propeller.js"></script>
-  <script src="app.js"></script>
 </html>
